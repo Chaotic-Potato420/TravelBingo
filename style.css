@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+*{
+  --primary-color: #C7CCDB;
+  --secondary-color: #7FD1B9;
+  --dark-primary: #767B91;
+  --title: #2A324B;
+  --celebrate: #B8E0D2;
+}
+body {
+  background-color: var(--primary-color);
+  font-family: "Quicksand", sans-serif;
+  margin: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.all{
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-left: 4rem;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  width: 600px;
+  background: linear-gradient(180deg, var(--title) 16%, var(--dark-primary) 16%);
+}
+#title {
+  font-size: 1.5rem;
+  border-radius: 50px;
+  letter-spacing: 5.75rem;
+  margin-left: 3.5rem;
+  color: white;
+}
+
+.wrapper {
+  margin-left: 2rem;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: var(--dark-primary);
+  color: var(--dark-primary);
+}
+.wrapper img{
+  width: 48px;
+  height: 48px;
+}
+
+.box {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.button {
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.mode{
+  justify-content: center;
+  display: flex;
+}
+.modes{
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  border-radius: 5rem;
+  border: 3px solid black;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  background-color: var(--secondary-color);
+
+  animation: move 3s 2000000;
+  position: relative;
+}
+
+@keyframes move{
+  0%{top:0px;}
+  50%{top:20px;}
+  100%{top:0px;}
+}
+
+.celebrate{
+  text-align: center;
+  padding-top: 4%;
+  color: var(--title);
+  font-size: 5rem;
+  font-weight: 90rem;
+}
+.celebrate button{
+  font-size: 2rem;
+  background-color: var(--title);
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+#ending{
+  background-color: var(--celebrate);
+  background-image: url("confetti.gif");
+  background-size: cover;
+}
+
+.key{
+  margin-left: 100px;
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 400px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border-right: 0px;
+}
+.key img{
+  width: 48px;
+  height: 48px;
+  margin-left: 20px;
+}
+.key h4{
+  padding: 0px;
+  margin: 0px;
+}
+.key2{
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 400px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border-left: 0px;
+}
+.key2 img{
+  width: 48px;
+  height: 48px;
+  margin-left: 20px;
+}
+.key2 h4{
+  padding: 0px;
+  margin: 0px;
+}
